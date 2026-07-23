@@ -3,7 +3,7 @@
 ## 프로젝트 정보
 - **프로젝트 유형**: Greenfield
 - **시작 시각**: 2026-07-23T03:27:03Z
-- **현재 단계**: INCEPTION - Application Design (산출물 생성 완료, 사용자 승인 대기)
+- **현재 단계**: CONSTRUCTION - U01 Platform Foundation & Identity / Functional Design
 - **요구사항 분석 깊이**: Comprehensive
 
 ## 워크스페이스 상태
@@ -32,6 +32,8 @@
 - **건너뜀**: Reverse Engineering — Greenfield이며 기존 코드 없음
 - **위험 수준**: 높음
 - **계획 문서**: `aidlc-docs/inception/plans/execution-plan.md`
+- **생성된 Unit 수**: 10개
+- **구현 순서**: Wave 0 최소 기반 → Wave 1 Career E2E → Wave 2 면접 → Wave 3 상담 → Wave 4 운영·경화
 
 ## 단계 진행 상황
 ### INCEPTION PHASE
@@ -40,22 +42,25 @@
 - [x] Requirements Analysis
 - [x] User Stories
 - [x] Workflow Planning
-- [ ] Application Design — 산출물 생성 완료, 사용자 승인 대기
-- [ ] Units Generation — EXECUTE
+- [x] Application Design
+- [x] Units Generation
 
 ### CONSTRUCTION PHASE
-- [ ] Functional Design — EXECUTE PER UNIT
-- [ ] NFR Requirements — EXECUTE PER UNIT
-- [ ] NFR Design — EXECUTE PER UNIT
-- [ ] Infrastructure Design — EXECUTE PER UNIT
-- [ ] Code Generation — EXECUTE PER UNIT
+- [ ] U01 Platform Foundation & Identity
+  - [ ] Functional Design — 진행 중: 계획 질문 응답 대기
+  - [ ] NFR Requirements
+  - [ ] NFR Design
+  - [ ] Infrastructure Design
+  - [ ] Code Generation
+- [ ] U02~U10 Per-Unit Design & Code Generation
 - [ ] Build and Test — EXECUTE
 
 ### OPERATIONS PHASE
 - [ ] Operations — PLACEHOLDER
 
 ## 현재 상태
-- **Lifecycle Phase**: INCEPTION
-- **Current Stage**: Application Design Part 2 Complete
-- **Next Step**: Application Design 산출물 승인 후 Units Generation
-- **Status**: 사용자 승인 대기
+- **Lifecycle Phase**: CONSTRUCTION
+- **Current Unit**: U01 Platform Foundation & Identity
+- **Current Stage**: Functional Design - Planning and Questions
+- **Next Step**: U01 Functional Design 계획 질문 답변 수집 및 검증
+- **Status**: 사용자 답변 대기

@@ -113,9 +113,9 @@ flowchart TD
 - [x] Requirements Analysis — Comprehensive 완료
 - [x] User Stories — 3개 페르소나, 9개 Epic, 71개 스토리 완료 및 승인
 - [x] Workflow Planning — 본 실행 계획 작성 및 검증 완료
-- [ ] Application Design — **EXECUTE, Comprehensive**
+- [x] Application Design — **EXECUTE, Comprehensive**
   - **근거**: 신규 컴포넌트·서비스 경계, 역할별 서비스, AI·미디어·상담 상호작용과 핵심 메서드 정의가 필요하다.
-- [ ] Units Generation — **EXECUTE, Comprehensive**
+- [x] Units Generation — **EXECUTE, Comprehensive**
   - **근거**: 9개 도메인, 다수 데이터 모델·API, 비동기 처리 및 인프라를 의존성 있는 구현 단위로 분해해야 한다.
 
 ### CONSTRUCTION PHASE
