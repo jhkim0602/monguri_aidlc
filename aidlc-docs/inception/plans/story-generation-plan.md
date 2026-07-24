@@ -1,4 +1,4 @@
-# Story Generation Plan
+# 스토리 생성 계획
 
 ## 목적
 승인된 101개 요구사항을 INVEST 기준의 사용자 스토리, 명확한 인수 조건 및 사용자 페르소나로 변환한다.
@@ -7,7 +7,7 @@
 - `aidlc-docs/inception/requirements/requirements.md`
 - `aidlc-docs/inception/plans/user-stories-assessment.md`
 
-## Part 1: 계획 진행 체크리스트
+## 1부: 계획 진행 체크리스트
 - [x] 승인된 요구사항과 사용자 유형을 분석한다.
 - [x] User Stories 실행 필요성을 평가하고 평가 문서를 생성한다.
 - [x] 적용 가능한 스토리 분해 방식과 질문을 작성한다.
@@ -139,7 +139,7 @@ X) 기타 (아래 `[Answer]:` 뒤에 설명)
 
 [Answer]:A
 
-## Part 2: 생성 실행 체크리스트
+## 2부: 생성 실행 체크리스트
 - [x] 승인된 계획과 모든 답변을 다시 읽는다.
 - [x] `personas.md`에 사용자 원형, 목표, 동기, 행동, 불편 및 제약을 생성한다.
 - [x] 확정된 분해 방식에 따라 Epic과 사용자 여정을 정의한다.

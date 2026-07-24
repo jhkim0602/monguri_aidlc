@@ -1,4 +1,4 @@
-# Story Generation Clarification Questions
+# 스토리 생성 명확화 질문
 
 ## 모호성
 기능·도메인 기반 구성을 선택했지만 요구사항 ID는 Epic에만 연결하도록 선택했습니다. 스토리 문서에서 Epic을 어떻게 사용할지 확정해야 추적 구조가 명확해집니다.

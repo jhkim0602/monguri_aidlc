@@ -236,3 +236,184 @@
 **Context**: INCEPTION - Units Generation 승인 완료; CONSTRUCTION - U01 Functional Design 시작
 
 ---
+## U01 Functional Design 계획 질문 응답 요청
+**Timestamp**: 2026-07-23T07:21:27Z
+**AI Prompt**: "`aidlc-docs/construction/plans/u01-platform-foundation-identity-functional-design-plan.md`에 계정 상태, 이메일 확인, 세션 폐기, 역할 부여, 프로필, 계정 삭제, 권한 오류, 알림, 감사 장애 정책에 관한 14개 질문을 작성했다. 각 `[Answer]:` 뒤에 선택 문자를 입력한 후 완료를 알려 달라."
+**AI Response**: "U01 범위와 선행 산출물을 로드해 Functional Design 계획을 생성하고 상태를 CONSTRUCTION/U01로 전환했다. Resiliency Baseline은 활성 상태로 설계 게이트에 반영했고, 부분 PBT는 PBT-02/03/07/08/09 전달을 유지했다. Security Baseline은 비활성 상태이므로 확장 규칙 적용을 건너뛰되 프로젝트 고유 인증·권한·감사·삭제 요구는 유지했다. 계획·상태·실행 계획 문서 진단은 모두 통과했다."
+**Status**: 사용자 응답 대기
+**Context**: CONSTRUCTION - U01 Platform Foundation & Identity / Functional Design Planning
+
+---
+## U01 Functional Design 답변 검증
+**Timestamp**: 2026-07-23T09:58:46Z
+**User Input**: "작성완료"
+**AI Response**: "U01 Functional Design 계획의 14개 답변을 검증했다. 질문 1·2·4·5·6·8~14의 12개 답변은 유효하고 기존 결정과 모순되지 않으나, 질문 3(동시 로그인 세션)과 질문 7(계정 삭제 유예와 취소)의 `[Answer]:`가 비어 있어 답변 수집 게이트를 통과하지 못했다. 기존 계획 문서의 두 항목을 작성하도록 안내했다."
+**Context**: CONSTRUCTION - U01 Functional Design Planning; 미응답 2건 보완 대기
+
+---
+## U01 Functional Design 보완 답변 재검증
+**Timestamp**: 2026-07-23T10:06:16Z
+**User Input**: "작성완료"
+**AI Response**: "초기 14개 답변이 모두 유효함을 확인했다. 전문가 심사 대기·거절 상태와 7일 삭제 유예 중 취소 인증 경로가 상세 상태 머신에 필요한 수준으로 정의되지 않아 `u01-platform-foundation-identity-functional-design-clarification-questions.md`에 3개 추가 질문을 생성했다."
+**Context**: CONSTRUCTION - U01 Functional Design; 추가 확인 답변 대기
+
+---
+
+## U01 Functional Design 진행 요청 검증
+**Timestamp**: 2026-07-23T10:13:47Z
+**User Input**: "이어서 진행하라"
+**AI Response**: "추가 확인 문서를 다시 읽었으나 세 `[Answer]:`가 모두 비어 있어 설계 산출물 생성을 보류했다. 전문가 심사 대기 허용 기능, 심사 거절 후 계정 상태, 삭제 유예 중 취소 인증 경로의 답변 작성을 안내했다."
+**Context**: CONSTRUCTION - U01 Functional Design; 미응답 3건으로 사용자 추가 답변 대기
+
+---
+## U01 Functional Design 추가 답변 완료
+**Timestamp**: 2026-07-23T10:23:05Z
+**User Input**: "작성완료"
+**AI Response**: "추가 확인 3개 답변을 검증했다. 심사 대기 전문가는 신청 프로필·심사 상태만 사용하고, 심사 거절 시 활성 구직 사용자로 전환하며, 삭제 유예 취소는 이메일·비밀번호 재검증을 거친 제한 세션에서만 허용하는 것으로 확정했다. 모호성·모순이 모두 해소되어 U01 Functional Design 산출물 생성을 시작했다."
+**Context**: CONSTRUCTION - U01 Functional Design; 질문 게이트 통과 및 산출물 생성 시작
+
+---
+## U01 Functional Design 산출물 완료 및 승인 요청
+**Timestamp**: 2026-07-23T10:32:15Z
+**AI Response**: "확정된 17개 사용자 결정을 기반으로 U01의 `business-logic-model.md`, `business-rules.md`, `domain-entities.md`를 생성했다. 계정·이메일 확인·다중 세션·전문가 역할·7일 삭제 유예와 세대별 전파·권한 기본 거부·알림 독립성·감사 원자성·공통 계약을 상세화했다. 82개 고유 Business Rule과 PBT-02/03/07/08 전달 속성을 정의했다. 14+3개 답변 완전성, 필수 섹션, 규칙 ID 중복, Markdown 구조와 IDE 진단을 검증했으며 모두 통과했다. Resiliency와 부분 PBT 차단 발견 사항은 없고 Security Baseline은 비활성 상태로 N/A다."
+**AI Prompt**: "`aidlc-docs/construction/u01-platform-foundation-identity/functional-design/`의 산출물을 검토하고 Request Changes 또는 Continue to Next Stage를 선택해 달라. 다음 단계는 U01 NFR Requirements다."
+**Status**: 사용자 승인 대기
+**Context**: CONSTRUCTION - U01 Functional Design 완료 승인 게이트
+
+---
+## 응답 언어 요청
+**Timestamp**: 2026-07-23T10:49:32Z
+**User Input**: "한국어로 말해줘"
+**AI Response**: "U01 Functional Design 완료 결과와 승인 선택지를 한국어로 다시 안내했다."
+**Context**: CONSTRUCTION - U01 Functional Design 완료 승인 게이트
+
+---
+## U01 Functional Design 승인 및 후속 작업 시작
+**Timestamp**: 2026-07-23T11:13:38Z
+**User Input**: "다음작업을 시작하라."
+**AI Response**: "U01 Functional Design의 다음 작업 진행 지시를 승인으로 반영하고, 설계 문서와 같은 디렉터리의 requirements.md 존재 여부를 확인하는 후속 작업을 시작했다."
+**Context**: CONSTRUCTION - U01 Functional Design 승인 완료; 설계 우선 후속 문서 분기
+
+---
+
+## 설계 기반 요구사항 생성
+**Timestamp**: 2026-07-23T11:13:38Z
+**User Input**: "<implicit-rules>## Implicit Rules
+You are working on the design document.
+
+IMPORTANT: If you just created the design document in this same turn, do NOT ask for review yet. Wait for the user to see it first.
+
+Check if requirements.md exists in the same directory:
+- If requirements.md does NOT exist (design-first workflow): Proceed to create requirements.md based on the design.
+- If requirements.md exists (requirements-first workflow): Proceed to create tasks.md.</implicit-rules>"
+**AI Response**: "U01 Functional Design 디렉터리를 확인한 결과 requirements.md가 없어 설계 우선 분기를 적용했다. 승인된 business logic, business rules, domain entities에서 14개 추적 가능한 요구사항과 인수 기준, 통합 계약, PBT·Resiliency 준수 항목을 도출해 같은 디렉터리에 requirements.md를 생성했다."
+**Context**: CONSTRUCTION - U01 Functional Design; design-first workflow 후속 요구사항 생성
+
+---
+## 세션 재개 및 Design-first 분기 요청
+**Timestamp**: 2026-07-23T11:13:15Z
+**User Input**: "continue"
+**AI Response**: "기존 AI-DLC 상태와 U01 Functional Design 산출물을 다시 로드하고, 같은 디렉터리의 requirements.md 존재 여부를 확인했다."
+**Context**: CONSTRUCTION - U01 Functional Design 재개
+
+---
+
+## Design-first 요구사항 생성 지침
+**Timestamp**: 2026-07-23T11:13:15Z
+**User Input**: "<implicit-rules>## Implicit Rules
+You are working on the design document.
+
+IMPORTANT: If you just created the design document in this same turn, do NOT ask for review yet. Wait for the user to see it first.
+
+Check if requirements.md exists in the same directory:
+- If requirements.md does NOT exist (design-first workflow): Proceed to create requirements.md based on the design.
+- If requirements.md exists (requirements-first workflow): Proceed to create tasks.md.</implicit-rules>"
+**AI Response**: "Functional Design 디렉터리에 requirements.md가 없음을 확인하여 design-first 분기를 적용했다. 승인된 business logic, 82개 Business Rule, Domain Entity, 상위 요구사항과 확장 규칙을 기반으로 14개 요구사항과 추적 가능한 Acceptance Criteria를 포함한 requirements.md를 생성했다. Kiro Spec 진단에서 요구된 표준 제목과 Glossary를 보완한 뒤 진단을 통과했고 Requirement 1~14 및 각 Traceability 섹션을 확인했다. Functional Design 계획 체크박스와 상태 추적을 같은 상호작용에서 갱신했다."
+**Context**: CONSTRUCTION - U01 Platform Foundation & Identity / Functional Design design-first requirements generation
+
+---
+
+## 확장 규칙 적용 기록
+**Timestamp**: 2026-07-23T11:13:15Z
+**User Input**: "Workspace rule: core-workflow.md를 전체 실행에 적용"
+**AI Response**: "Resiliency Baseline 활성 상태와 부분 PBT(PBT-02/03/07/08/09)를 requirements.md에 반영했다. Security Baseline은 aidlc-state.md에서 비활성화되어 확장 규칙 로드를 건너뛰었으며 프로젝트 고유 인증·권한·개인정보·감사·삭제 요구는 유지했다. Mermaid와 ASCII 다이어그램이 없어 관련 구문 검증은 N/A로 판정했다. 차단 발견 사항은 없다."
+**Context**: Extension compliance - Resiliency compliant, partial PBT compliant, Security skipped by configuration
+
+---
+## 설계 기반 요구사항 검증 완료
+**Timestamp**: 2026-07-23T11:28:28Z
+**AI Response**: "동시 자동 생성과 append가 겹쳐 발생한 중복 구간을 제거했다. 최종 requirements.md는 14개 고유 Requirement, Acceptance Criteria, 설계·Business Rule 추적 행렬, Resiliency/PBT 준수 요약으로 구성되며 미완성 표식과 IDE 진단 오류가 없음을 확인했다."
+**Context**: CONSTRUCTION - U01 Functional Design; design-first requirements 콘텐츠 검증 및 정합성 복구
+
+---
+## U01 요구사항·구현 작업 문서 생성 및 한국어화
+**Timestamp**: 2026-07-23T11:47:20Z
+**User Input**: "다음작업을 시작하라 (앞으로 문서는 모두 한국어로. + 기존 영어로된 문서도 한국어로 갱신하여 작업을 이어가라)"
+**AI Response**: "U01 Functional Design의 승인된 설계에서 도출한 `requirements.md`를 한국어 중심으로 갱신하고, 요구사항 1~14를 상위 작업 14개·하위 작업 57개·9개 실행 Wave로 분해한 `tasks.md`를 생성했다. 기존 AI-DLC 문서 18개의 영어 일반 제목과 본문을 한국어 중심으로 갱신했으며, Kiro Spec 호환에 필요한 영문 스키마 별칭은 독립 제목으로 유지했다. `.kiro/steering/aidlc-document-language.md`를 추가해 이후 사용자 응답과 문서의 한국어 작성 정책을 상시 적용했다. Functional Design 계획 체크박스와 산출물 목록, `aidlc-state.md`의 현재 상태와 다음 단계를 동기화했다. `requirements.md`의 Requirement 1~14, `tasks.md`의 상위 작업 14개·하위 작업 57개·선행 작업 14개·Wave 0~8 JSON 의존성 그래프, 미완성 표식 부재, Markdown/Kiro Spec 진단과 `git diff --check`를 검증했으며 모두 통과했다. Resiliency Baseline과 부분 PBT 전달 항목은 준수하며 차단 발견 사항이 없고, Security Baseline은 비활성 상태로 적용하지 않았다."
+**Context**: CONSTRUCTION - U01 Platform Foundation & Identity / Functional Design 후속 requirements·tasks 생성 및 한국어 문서 정책 적용 완료; 다음 단계는 U01 NFR Requirements
+
+---
+## 자율 설계 진행 요청 수신
+**Timestamp**: 2026-07-23T13:16:20Z
+**User Input**: "자율주행모드를 사용하여 나한테 물어보지말고. 판단이 필요하다면 적절한 추론으로 너가 직접 판단하고. 인프라 구성 설계까지 모든 과정을 (코드생성 직전까지) 주도적으로 ai-dlc 실행흐름에 알맞춰 주도진행을 시작하라."
+**AI Response**: "기존 AI-DLC 상태를 재개하고 U01 NFR Requirements, NFR Design, Infrastructure Design을 자율 수행하여 Code Generation 직전에서 중단하기로 했다. 이미 승인된 사용자 결정은 재사용하고 미정 기술·수치는 일관성, 비용, 운영 복잡도와 확장성 기준으로 결정한다."
+**Context**: CONSTRUCTION - U01 Platform Foundation & Identity; 사용자 명시적 자율 진행 위임
+
+---
+## U01 NFR Requirements 완료 및 자율 승인
+**Timestamp**: 2026-07-23T19:18:03Z
+**User Input**: "자율주행모드를 사용하여 나한테 물어보지말고. 판단이 필요하다면 적절한 추론으로 너가 직접 판단하고. 인프라 구성 설계까지 모든 과정을 (코드생성 직전까지) 주도적으로 ai-dlc 실행흐름에 알맞춰 주도진행을 시작하라."
+**AI Response**: "U01 Functional Design과 상위 NFR을 분석해 초기 용량·성능 SLO, 99.9%, 4시간 RTO·1시간 RPO, 보안·관측·유지보수 요구를 확정했다. Node.js 24.18.0 LTS, TypeScript 7.0.2, NestJS 11.1.28/Fastify, PostgreSQL 17, Prisma 7.9.0, Vitest 4.1.10과 fast-check 4.9.0을 선택하고 NFR Requirements 계획·산출물의 모든 체크박스를 완료했다. 사용자 자율 진행 위임을 단계 진행 승인으로 적용했다."
+**Context**: CONSTRUCTION - U01 NFR Requirements 완료; Resiliency 15개 준수, PBT-09 준수, 차단 발견 사항 0건
+
+---
+## U01 NFR Design 완료 및 자율 승인
+**Timestamp**: 2026-07-23T19:18:03Z
+**User Input**: "자율주행모드를 사용하여 나한테 물어보지말고. 판단이 필요하다면 적절한 추론으로 너가 직접 판단하고. 인프라 구성 설계까지 모든 과정을 (코드생성 직전까지) 주도적으로 ai-dlc 실행흐름에 알맞춰 주도진행을 시작하라."
+**AI Response**: "timeout·제한 retry·circuit breaker·bulkhead·transactional outbox·default deny·autoscaling·health·OpenTelemetry·SLO burn alert 패턴과 12개 논리 컴포넌트를 설계했다. 출시 전 장애 시나리오, 분기별 restore, 반기별 game day와 Git issue 추적을 복원력 시험 방식으로 확정하고 계획 체크박스를 모두 완료했다. 사용자 자율 진행 위임을 단계 진행 승인으로 적용했다."
+**Context**: CONSTRUCTION - U01 NFR Design 완료; Resiliency 15개 준수, Partial PBT 전달 준수, 차단 발견 사항 0건
+
+---
+## U01 Infrastructure Design 완료 및 Code Generation 직전 중단
+**Timestamp**: 2026-07-23T19:18:03Z
+**User Input**: "자율주행모드를 사용하여 나한테 물어보지말고. 판단이 필요하다면 적절한 추론으로 너가 직접 판단하고. 인프라 구성 설계까지 모든 과정을 (코드생성 직전까지) 주도적으로 ai-dlc 실행흐름에 알맞춰 주도진행을 시작하라."
+**AI Response**: "AWS ap-northeast-2 2개 AZ, ALB/WAF, ECS Fargate, RDS PostgreSQL Multi-AZ, ElastiCache for Valkey, SQS/DLQ, EventBridge, SES, KMS/Secrets Manager, CloudWatch/ADOT/X-Ray, AWS Backup, Resilience Hub와 AWS CDK v2/GitHub Actions 구성을 설계했다. 직접 service update와 이전 Git·image·CDK version 재배포, expand-migrate-contract, 4시간 RTO·1시간 RPO Runbook 및 U10 공유 인프라 계약을 정의했다. 모든 계획 체크박스와 aidlc-state.md를 갱신했으며 Code Generation은 시작하지 않았다."
+**Context**: CONSTRUCTION - U01 Infrastructure Design 완료; 다음 단계 U01 Code Generation Part 1; Resiliency 차단 발견 사항 0건
+
+---
+## 확장 기능 적용 기록
+**Timestamp**: 2026-07-23T19:18:03Z
+**AI Response**: "Resiliency Baseline은 활성 상태로 세 단계 모두 RESILIENCY-01~15를 평가해 준수 처리했다. Property-Based Testing은 Partial로 유지하고 NFR Requirements에서 PBT-09를 충족했으며 PBT-02/03/07/08을 Code Generation 입력으로 보존했다. Security Baseline은 aidlc-state.md에서 No이므로 확장 규칙 적용을 건너뛰었고, 프로젝트 고유 인증·암호화·권한·감사·삭제 요구만 유지했다."
+**Context**: Extension compliance - Security skipped by configuration; Resiliency/PBT blocking findings 0
+
+---
+## U01 범위 확인 질문
+**Timestamp**: 2026-07-23T20:57:26Z
+**User Input**: "여러유닛중 01만 하는거야?>"
+**AI Response**: "현재 완료한 범위는 U01뿐이라고 설명했다. 승인된 AI-DLC가 per-unit 완결 순서이므로 U01의 설계 후 Code Generation을 거쳐 U02로 이동하도록 되어 있으며, 전체 U01~U10을 코드 생성 없이 Infrastructure Design까지 선행하는 방식은 현재 실행 계획과 다름을 안내했다."
+**Context**: CONSTRUCTION - 범위 및 per-unit 실행 순서 확인
+
+---
+## 전체 Unit 선행 설계 범위 변경
+**Timestamp**: 2026-07-23T22:10:59Z
+**User Input**: "모든 유닛들을 코드 생성전까지만 모두 완료하라
+
+모든 유닛들을 코드 생성전까지만 모두 완료하라"
+**AI Response**: "기존 per-unit 완결 순서를 사용자 지시로 변경해 U01~U10의 Functional Design, NFR Requirements, NFR Design, Infrastructure Design을 모두 먼저 완료하고 모든 Code Generation을 보류하기로 했다. 애플리케이션 코드와 IaC 코드는 생성하지 않는다."
+**Context**: CONSTRUCTION - 전체 Unit Code Generation 이전 설계 순서 변경 및 자율 진행 승인
+
+---
+## 전체 Unit 설계 작업 재개
+**Timestamp**: 2026-07-23T22:10:59Z
+**User Input**: "작업을 이어 시작하라"
+**AI Response**: "AI-DLC 상태, 필수 Construction 규칙, 활성 Resiliency Baseline과 Partial PBT, 비활성 Security Baseline 및 U02~U10 입력을 재동기화하고 전체 Unit 선행 설계 작업을 재개했다."
+**Context**: CONSTRUCTION - U02~U10 Code Generation 이전 설계 재개
+
+---
+## 진행 상태 확인 요청
+**Timestamp**: 2026-07-24T00:27:52Z
+**User Input**: "어디까지 된건가?"
+**AI Response**: "U02~U10의 36개 단계 계획과 Unit별 Functional Design, NFR Requirements, NFR Design, Infrastructure Design 산출물이 모두 생성됐음을 확인했다. 개별 계획에는 미완료 체크박스와 빈 `[Answer]:`가 없고 산출물에 미완성 표식도 없다. 다만 전체 계획, aidlc-state.md, execution-plan.md, shared-infrastructure.md와 감사 완료 기록의 동기화 및 최종 진단·git 검증이 남아 있어 공식 완료 처리 전 상태라고 보고했다. Code Generation과 애플리케이션/IaC 코드는 생성되지 않았다."
+**Context**: CONSTRUCTION - 전체 Unit Code Generation 이전 설계 진행 상태 점검
+
+---

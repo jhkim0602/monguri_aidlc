@@ -1,4 +1,4 @@
-# Application Design Plan
+# 애플리케이션 설계 계획
 
 ## 목적
 승인된 요구사항과 사용자 스토리를 기반으로 구현 기술에 종속되지 않는 애플리케이션 컴포넌트, 인터페이스, 서비스 오케스트레이션과 의존 방향을 정의한다. 상세 비즈니스 규칙과 인프라 자원 선택은 후속 Functional/NFR/Infrastructure Design에서 확정한다.
@@ -9,7 +9,7 @@
 - `aidlc-docs/inception/user-stories/personas.md`
 - `aidlc-docs/inception/plans/execution-plan.md`
 
-## Part 1: 계획 및 결정 체크리스트
+## 1부: 계획 및 결정 체크리스트
 - [x] 승인된 요구사항과 9개 Epic의 비즈니스 역량을 분석한다.
 - [x] 컴포넌트 식별, 메서드, 서비스 계층, 의존성과 디자인 패턴의 모호성을 평가한다.
 - [x] 기존 결정과 중복되지 않는 Application Design 질문을 작성한다.
@@ -210,7 +210,7 @@ X) 기타 (아래 `[Answer]:` 뒤에 설명)
 
 [Answer]:좀더쉽게 설명
 
-## Part 2: 설계 산출물 생성 체크리스트
+## 2부: 설계 산출물 생성 체크리스트
 - [x] 확정된 아키텍처 스타일과 컴포넌트 경계 원칙을 문서화한다.
 - [x] `components.md`에 컴포넌트 이름, 목적, 책임과 제공·요구 인터페이스를 생성한다.
 - [x] `component-methods.md`에 컴포넌트별 메서드 서명, 목적과 입력·출력 타입을 생성한다.

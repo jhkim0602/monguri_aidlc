@@ -1,8 +1,11 @@
+# 요구사항 문서 (Requirements Document)
 # Requirements Document
 
+## 소개 (Introduction)
 ## Introduction
 이 문서는 AI 기반 커리어 관리 플랫폼의 승인 가능한 제품 범위, 기능, 품질 속성, 데이터 정책 및 운영 제약을 정의한다. 상세 내용은 한국어로 작성하며 식별 가능한 요구사항 ID를 사용한다.
 
+## 용어집 (Glossary)
 ## Glossary
 | 용어 | 정의 |
 |---|---|
@@ -15,6 +18,7 @@
 | RPO | 장애 시 허용 가능한 데이터 손실 시점 범위 |
 | PBT | 다양한 입력을 자동 생성해 일반 속성을 검증하는 속성 기반 테스트 |
 
+## 요구사항 (Requirements)
 ## Requirements
 아래 장들은 프로젝트의 상세 요구사항과 추적성 및 확장 기능 준수 상태를 정의한다.
 
@@ -350,7 +354,7 @@
 
 ## 16. 확장 기능 준수 현황
 
-### 16.1 Resiliency Baseline
+### 16.1 복원력 기준 (Resiliency Baseline)
 | 규칙 | 상태 | 요구사항 단계 근거 |
 |---|---|---|
 | RESILIENCY-01 | 준수 | 11장에서 중요도, 장애 영향 및 의존성을 분류 |
@@ -371,10 +375,10 @@
 
 **차단 발견 사항**: 없음.
 
-### 16.2 Security Baseline
+### 16.2 보안 기준 (Security Baseline)
 사용자 결정에 따라 비활성화했다. 다만 실제 개인정보를 다루는 파일럿이므로 프로젝트 고유의 필수 보안·개인정보 요구사항은 8장과 10.3장에 유지한다.
 
-### 16.3 Property-Based Testing
+### 16.3 속성 기반 테스트 (Property-Based Testing)
 부분 적용 모드다. 요구사항 단계에는 직접 적용되는 구현 검증 규칙이 없으므로 PBT-02, PBT-03, PBT-07, PBT-08 및 PBT-09의 적용 요구를 10.7장에 기록했으며, 구체적인 준수 검증은 NFR Requirements와 Code Generation 단계에서 수행한다.
 
 ## 17. 미결 설계 결정

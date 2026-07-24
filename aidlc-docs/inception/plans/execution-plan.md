@@ -1,6 +1,6 @@
-# Execution Plan
+# 실행 계획
 
-## Workflow Planning 체크리스트
+## 워크플로 계획 체크리스트
 - [x] 승인된 요구사항, 검증 답변, 페르소나와 사용자 스토리를 로드했다.
 - [x] Greenfield 범위, 영향 영역, 복잡도와 위험을 분석했다.
 - [x] 조건부 Inception 및 Construction 단계의 실행 여부를 결정했다.
@@ -33,7 +33,7 @@
 - **롤백 복잡도**: 중간~높음 — Greenfield라 기존 서비스 영향은 없지만 데이터·미디어·IaC 버전 호환이 필요하다.
 - **테스트 복잡도**: 높음 — 권한, 비동기 상태, AI 근거성, 실시간 연결, 삭제·복원 및 다중 AZ 동작을 검증해야 한다.
 - **주요 완화책**: Application Design과 Units Generation으로 경계를 확정하고, 단위별 Functional/NFR/Infrastructure Design과 단계별 품질 게이트를 적용한다.
-## Workflow Visualization
+## 워크플로 시각화
 
 ```mermaid
 flowchart TD
@@ -107,7 +107,7 @@ flowchart TD
 
 ## 단계 실행 계획
 
-### INCEPTION PHASE
+### 도입 단계
 - [x] Workspace Detection — Greenfield 판정 완료
 - [x] Reverse Engineering — Greenfield이므로 SKIP 완료
 - [x] Requirements Analysis — Comprehensive 완료
@@ -118,7 +118,7 @@ flowchart TD
 - [x] Units Generation — **EXECUTE, Comprehensive**
   - **근거**: 9개 도메인, 다수 데이터 모델·API, 비동기 처리 및 인프라를 의존성 있는 구현 단위로 분해해야 한다.
 
-### CONSTRUCTION PHASE
+### 구축 단계
 - [ ] Functional Design — **EXECUTE PER UNIT, Adaptive Comprehensive**
   - **근거**: 권한·스냅샷·문서 버전·AI 근거·면접 상태·삭제 수명주기 등 복잡한 비즈니스 규칙과 데이터 모델이 있다.
 - [ ] NFR Requirements — **EXECUTE PER UNIT, Comprehensive**
@@ -132,7 +132,7 @@ flowchart TD
 - [ ] Build and Test — **EXECUTE, Comprehensive**
   - **근거**: 전체 단위 빌드와 단위·통합·계약·E2E·성능·복원력·PBT 실행 지침이 필요하다.
 
-### OPERATIONS PHASE
+### 운영 단계
 - [ ] Operations — **PLACEHOLDER**
   - **근거**: 현 AI-DLC 규칙에서 향후 확장 단계이며 배포·운영 구현은 현재 Construction 산출물 범위까지만 다룬다.
 
@@ -159,7 +159,7 @@ flowchart TD
 
 ## 확장 기능 준수 요약
 
-### Resiliency Baseline
+### 복원력 기준 (Resiliency Baseline)
 | 규칙 | Workflow Planning 판정 | 근거 또는 후속 게이트 |
 |---|---|---|
 | RESILIENCY-01 | 준수 | 중요 워크로드와 장애 영향을 요구사항에 식별했으며 Application Design에서 컴포넌트별로 구체화한다. |
@@ -180,12 +180,12 @@ flowchart TD
 
 **Resiliency 차단 발견 사항**: 없음.
 
-### Property-Based Testing
+### 속성 기반 테스트 (Property-Based Testing)
 - **적용 모드**: Partial — PBT-02, PBT-03, PBT-07, PBT-08, PBT-09만 차단 규칙이다.
 - **Workflow Planning 직접 적용**: 해당 없음. 이 단계에는 테스트 구현이나 프레임워크 선택 산출물이 없다.
 - **후속 적용 계획**: Functional Design에서 왕복·불변식 후보를 식별하고, NFR Requirements에서 PBT-09 프레임워크를 선택하며, Code Generation과 Build and Test에서 PBT-02·03·07·08을 구현·실행한다.
 - **PBT 차단 발견 사항**: 없음.
 
-### Security Baseline
+### 보안 기준 (Security Baseline)
 - **상태**: 비활성화 — 사용자 결정에 따라 확장 규칙을 적용하지 않았다.
 - **프로젝트 고유 보안**: 인증, 최소 권한, 암호화, 감사, 민감 로그 금지와 삭제 요구사항은 후속 단계의 필수 품질 조건으로 유지한다.

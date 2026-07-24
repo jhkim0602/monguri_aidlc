@@ -1,4 +1,4 @@
-# Unit of Work Plan
+# 작업 단위 계획
 
 ## 목적
 승인된 Application Design을 개발 가능한 Unit of Work로 분해하고, 각 단위의 책임·스토리·의존성·구현 순서와 Greenfield 코드 조직 전략을 확정한다.
@@ -19,7 +19,7 @@
 - 단순 CRUD를 불필요하게 독립 서비스로 분리하지 않는다.
 - EP-09 품질·복원력은 횡단 관심사이므로 전용 기반 작업과 각 단위의 품질 조건을 함께 고려한다.
 
-## Part 1: 계획 체크리스트
+## 1부: 계획 체크리스트
 - [x] 요구사항, 71개 스토리와 승인된 Application Design을 로드한다.
 - [x] Story Grouping, Dependencies, Team Alignment, Technical Considerations, Business Domain, Code Organization 범주를 모두 평가한다.
 - [x] 단위 경계와 구현 순서에 영향을 주는 사용자 결정 질문을 작성한다.
@@ -39,7 +39,7 @@
 - **EP-09 배치**: 공통 관측·배포·백업 기반은 Platform Foundation/Infrastructure가 담당하고 기능별 복원력·PBT 책임은 각 기능 Unit에도 할당한다.
 - **인프라 소유**: 공통 네트워크·관측·데이터 기반은 Platform Infrastructure, Service별 자원은 해당 Service Unit이 소유한다.
 
-## 생성할 Unit 후보
+## 생성할 작업 단위 후보
 | ID | Unit of Work | 실행 경계 | 주요 소유 범위 |
 |---|---|---|---|
 | U01 | Platform Foundation & Identity | Core API + shared packages | API Entry, Identity & Access, Notification 기반, 계약·감사 공통 규약 |
@@ -106,7 +106,7 @@ X) 기타 (아래 `[Answer]:` 뒤에 설명)
 
 [Answer]:D
 
-### 질문 4: Greenfield 저장소와 디렉터리 구조
+### 질문 4: 신규(Greenfield) 저장소와 디렉터리 구조
 여러 실행 경계와 공유 계약을 어떤 코드 저장소 구조로 관리할까요?
 
 A) 하나의 Monorepo에서 `apps/web`, `apps/core-api`, `services/*`, `packages/contracts`, `infra`로 분리
@@ -173,7 +173,7 @@ X) 기타 (아래 `[Answer]:` 뒤에 설명)
 
 [Answer]:B
 
-## Part 2: 생성 체크리스트
+## 2부: 생성 체크리스트
 - [x] 승인된 전체 계획을 다시 읽고 첫 번째 미완료 생성 단계를 식별한다.
 - [x] 확정된 기준에 따라 Unit, Service, Module의 경계와 명칭을 정의한다.
 - [x] 각 Unit의 목표, 책임, 비책임, 입력·출력 계약, 소유 컴포넌트와 준비 조건을 정의한다.
